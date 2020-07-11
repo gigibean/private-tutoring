@@ -1,0 +1,144 @@
+@font-face { font-family: 'MapoFlowerIsland'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff'); font-weight: normal; font-style: normal; }
+ul, h1, h4{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+#wrap {
+    width: auto;
+    height: 54px;
+    border-bottom: 1px solid #999;
+    text-align: center;
+}
+
+#search {
+    text-align: center;
+}
+
+input[type=text] {
+    border-radius: 2%;
+    border: none;
+    border-bottom: 2px solid rgb(100, 149, 237);
+    height: 20px;
+    /* top: px; */
+    width: 300px;
+}
+
+#b {
+    background-image: url(../imgs/button1.PNG);
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(100, 149, 237);
+    border-radius: 30%;
+    /* margin-top: 5px; */
+
+}
+
+.rank-box div{
+    border: 1px solid #999;
+    width: 500px;
+    height: 500px;
+    margin: 3% auto;
+
+}
+
+.rank-box img {
+    width: 500px;
+    height: 350px;
+}
+
+#box-model ul {
+    width: 500px;
+    height: 100px;
+    border: 1px solid #999;
+    list-style: none;
+    margin: 10px auto;
+    border-radius: 5px;
+    text-align: center;/*li에서 display:inline-block 했을때 li에서 text-align: center;하면 안되는지 잘 이해가 안됩니다.  */
+}
+
+#box-model li {
+    display: inline-block;
+    margin: 20px ;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid #999;
+
+}
+#box-model img {
+    padding-top: 12px;
+
+}
+#footer-div {
+    background-color: white;
+    border-top: 1px solid #999;
+    text-align: center;
+    color: gray;
+}
+
+/* 오늘 배운 것 추가 예시 */
+* {
+    font-family: 'MapoFlowerIsland';
+}
+
+p::selection {
+    background-color: coral;
+    color: white;
+}
+
+.rank-box p:first-child::before{
+    content: "Rank";
+    font-size: 1em;
+    color: darkgray;
+}
+
+.rank-box p:nth-child(2)::before {
+    content: "Title";
+    font-size: 1em;
+    color: darkgray;
+}
+
+.rank-box p:last-child::before {
+    content: "Artist";
+    font-size: 1em;
+    color: darkgray;
+}
+
+h1 > a , h1 > a:visited, h1 > a:link{
+    color: darkgray;
+    text-decoration: none;
+}
+
+h1 > a:focus {
+    color: black;
+}
+
+#search {
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+
+#search > input[type=text]:focus, #search > button {
+    outline: none;
+}
+
+#search > button {
+    vertical-align: bottom;
+}
+
+#search > input[type=text] {
+    height: 26px;
+}
+
+#search > select {
+    height: 30px;
+    outline: none;
+    border-color: rgb(100, 149, 237);
+    color: rgb(100, 149, 237);
+}
+
+

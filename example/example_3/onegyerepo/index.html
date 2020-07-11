@@ -1,0 +1,102 @@
+<!-- 일규님이 하신 과제 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>박스뮤직</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <h1> <a href="./index.html">6월의 신곡</a></h1>
+        </header>
+    </div>
+
+    <form id="search">
+        <select>
+            <option>All</option>
+            <option>Title</option>
+            <option>Artist</option>
+        </select>
+        <input type="text" id="a" placeholder="헤이즈" />
+        <button type="button" id="b"></button>
+    </form>
+    <div>
+        <!-- 박스 -->
+        <div id="box-model">
+            <ul>
+                <li>
+                    <a href="https://music.bugs.co.kr/newest" target="_blank" />
+                    <img src=imgs/new.PNG /> </a> </li>
+                <li>
+                    <a href="https://www.melon.com/genre/song_list.htm?gnrCode=GN0100" target="_blank" />
+                    <img src=imgs/new.PNG /> </a> </li>
+                <li>
+                    <a href="https://www.melon.com/chart/index.htm" />
+                    <img src=./imgs/new.PNG />
+                    <!-- ..은 부모 디랙토리 / . 은 현재디랙토리 의미 -->
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--컨텐츠 -->
+
+        <div class="rank-box">
+            <div>
+                <img src="./imgs/rank/rank1.jpg">
+                <!-- /는 root를 의미합니다. -->
+
+                <span>
+                    <p> 1위</p>
+                    <p> You're Cold (더 많이 사랑한 쪽이 아프대)</p>
+                    <p> 헤이즈</p>
+                    </sapn>
+            </div>
+            <div>
+                <img src="./imgs/rank/rank2.jpg">
+                <span>
+                    <p> 3위</p>
+                    <p> Into the I-LAND</p>
+                    <p> 아이유</p>
+                </span>
+            </div>
+            <div>
+                <img src="./imgs/rank/rank3.jpg">
+                <span>
+                    <p> 4위</p>
+                    <p> 에잇(Prod.&Feat. SUGA of BTS)</p>
+                    <p> 아이유</p>
+                </span>
+            </div>
+            <div>
+                <img src="./imgs/rank/rank4.jpg">
+                <span>
+                    <p> 5위</p>
+                    <p> MORE & MORE</p>
+                    <p> 트와이스</p>
+                </span>
+            </div>
+            <div>
+                <img src="./imgs/rank/rank5.jpg">
+                <span>
+                    <p> 5위</p>
+                    <p> 언제라도 어디에서라도</p>
+                    <p> 정승환</p>
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div id="footer-div">
+            <h4>COPYRIGHT Ⓒ BOX-MUSIC. ALL RIGHTS RESERVED.</h4>
+        </div>
+    </footer>
+</body>
+
+</html>
