@@ -448,6 +448,7 @@ nth-child(xn+b)
 * n은 음이 아닌 정수로 차례대로 대입됩니다.
 xn + y 대신 `even`,`odd`로 사용할 수 있습니다.   
 예를들어
+
 ```
 <html lang="en">
 
@@ -480,6 +481,7 @@ xn + y 대신 `even`,`odd`로 사용할 수 있습니다.
 
 </html>
 ```
+
 이렇게 사용한다면
 <br/><img src="imgs/doc3_26.PNG" alt="code result" /> <br/>
 
