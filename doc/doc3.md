@@ -88,7 +88,7 @@ p::selection {
 <br/><img src="imgs/doc3_10.PNG" alt="code result" /> <br/>
 
 #### ::placeholder
-`::placeholder` 가상 요소는 <input>이나 <textarea> 요소 안에 있는 placeholder text를 선택합니다.
+`::placeholder` 가상 요소는 `<input>`이나 `<textarea>` 요소 안에 있는 placeholder text를 선택합니다.
 
 대부분의 브라우저에서는 원래 밝은 회색의 컬러를 placeholder에 기본적으로 제공합니다.
 
