@@ -3,8 +3,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        p::selection {
+            color: aqua;
+        }
+        input:disabled {
+            background-color: red;
+        }
+        input:disabled::placeholder {
+            color: blue;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>HI world !!</h1>
+    <p>hello world</p>
+    <input type="text" placeholder="don't touch me " disabled>
 </body>
 </html>
