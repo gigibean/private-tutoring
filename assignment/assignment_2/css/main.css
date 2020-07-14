@@ -12,24 +12,35 @@ h1{
     height: 43px;
 }
 
-.wrap_head .wrap_search {
+/* .wrap_head .wrap_search {
     width:300px;
     margin-left: 1760px;
     margin-top: -40px;
+} */
+
+.ab {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .wrap_carousel {
-    margin: 0 auto;
-    margin-top: 20px;
+    /* margin: 0 auto; */
     border: 1px solid gray;
     border-radius: 5px;
     width:450px;
+    display: inline-block;
+    vertical-align: top;
+    height: 285px;
 }
 
 /*img 태그는 속성이 inline이면서block이다.*/
 .wrap_carousel img {
     width: 450px;
-    height: 170px;
+    height: 282px;
+    resize: both;
+    
 }
 
 .login {
@@ -37,8 +48,9 @@ h1{
     border:1px solid gray;
     border-radius: 5px; 
     padding: 5px;
-    margin-top:-170px;
-    margin-left: 1700px;
+    /* margin-top:-170px; */
+    /* margin-left: 1700px; */
+    display: inline-block;
 
 }
 
@@ -59,7 +71,7 @@ h1{
 
 .h1_member {
     display:inline-block;
-    background-image: url(/images/member.PNG);
+    background-image: url(../images/member.PNG);
     background-repeat: no-repeat;
     text-indent: -9999px;
     width:100px;
@@ -84,8 +96,12 @@ h1{
 }
 
 .wrap_footer .footer_h5 {
-    display:inline-block;
     width:500px;
-    margin-left: 1700px;
+    /* margin-left: 1700px; */
     background-color: red;
+    float: right;
+}
+
+.list-group {
+    margin-top: 5%;
 }
