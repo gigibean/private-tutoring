@@ -1,0 +1,120 @@
+h1,p {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+}
+
+.section {
+    background-color: darkgray;
+    width:1000px;
+    margin: 100px auto;
+}
+
+/*nav bars*/
+.wrap-nav{
+    margin-top: 50px;
+    width:1000px;
+    margin: 50px auto;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.wrap-nav .navbar-brand:hover{
+    background-color:pink;
+    
+}
+
+
+
+
+/*앨범 이미지, 프로필*/
+.album-cover {
+    width: 300px;
+    float: left; 
+    margin-right: 10px;
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+}
+
+.section::after{
+    content: '';
+    clear: left;
+    display: block;
+}
+
+.album-list {
+    margin-left: 610px;
+    margin-top: -250px;
+}
+
+.album-list li {
+    list-style: url(/icons-1.0.0-alpha5/icons-1.0.0-alpha5/icons/volume-down.svg); 
+}
+.album-list li:hover {
+    list-style: url(/icons-1.0.0-alpha5/icons-1.0.0-alpha5/icons/volume-down-fill.svg);
+  
+}
+
+.album-list h1 {
+    
+}
+
+/*margin값을 이미지width크기인 300px만큼 left했음*/
+.section .sub {
+    width:500px;
+    margin-left:300px;
+}
+
+
+.section .music-href img {
+    margin-top: 5px;
+    width:40px;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+
+.section .music-href img:hover {
+    margin-top: 5px;
+    width: 40px;
+    transform: scale(1.5);
+    transition: transform.5s;
+    border-radius: 50%;
+  
+}
+.sub .sub-p {
+
+    line-height: 2;
+    font-family: 'Nanum Brush Script', cursive;
+    color: #000000;
+
+}
+
+.sub .sub-span{
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.sub .sub-h1 {
+    margin-bottom: 10px;
+}
+
+.music-href {
+    vertical-align: bottom;
+}
+
+.music-href-sub li {
+    display: inline-block;
+    
+}
+
+.music-href-sub img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.music-href-sub img:hover {
+    width:60px;
+}
