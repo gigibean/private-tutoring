@@ -7,10 +7,14 @@ body{
     background-color: white;
 }
 
+
 .section {
     background-color: darkgray;
     width:1000px;
     margin: 100px auto;
+    background-image: url(/icons-1.0.0-alpha5/icons-1.0.0-alpha5/icons/align-center.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
 }
 
 /*nav bars*/
@@ -59,16 +63,11 @@ body{
   
 }
 
-.album-list h1 {
-    
-}
-
 /*margin값을 이미지width크기인 300px만큼 left했음*/
 .section .sub {
     width:500px;
     margin-left:300px;
 }
-
 
 .section .music-href img {
     margin-top: 5px;
@@ -84,6 +83,13 @@ body{
     transition: transform.5s;
     border-radius: 50%;
   
+}
+
+
+.music-href .music-href-sub a{
+
+    text-decoration: none;
+
 }
 .sub .sub-p {
 
@@ -107,6 +113,7 @@ body{
 
 .music-href-sub li {
     display: inline-block;
+
     
 }
 
@@ -117,4 +124,26 @@ body{
 
 .music-href-sub img:hover {
     width:60px;
+}
+
+.wrap-footer {
+    border-top: 1px solid gray;
+    padding: 20px;
+}
+
+.ani {
+    transition: transform 7s;
+    width: 300px;
+    height: 300px; 
+    border-radius: 150px;
+}
+
+.ani:hover {
+    transform: rotate( 360deg );
+    opacity: 0.2;
+}
+
+.section:nth-child(odd){
+    background-image: url(/icons-1.0.0-alpha5/icons-1.0.0-alpha5/icons/music-note-list.svg);
+    background-position: right center;
 }
