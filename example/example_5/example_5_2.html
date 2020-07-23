@@ -1,0 +1,38 @@
+<!-- grid template -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            /* grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+            grid-template: "header header header"
+                            "main main main"
+                            "footer footer footer"; */
+            grid-template: "header header header" 1fr
+            "main main main" 2fr
+            "footer footer footer" 1fr
+            / 1fr 1fr 1fr;
+            height: 100vh;  
+        }
+        .header {
+            grid-area: header;
+        }
+        .main {
+            grid-area: main;
+        }
+        .footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item header"></div>
+        <div class="item main"></div>
+        <div class="item footer"></div>
+    </div>  
+</body>
+</html>

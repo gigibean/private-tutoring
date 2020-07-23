@@ -1,0 +1,77 @@
+<!-- align-items -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 95vw;
+            margin: 0 auto;
+            margin-top: 5%;
+        }
+        .container {
+            width: 200px;
+            height: 200px;
+            display: grid;
+            grid-template-rows: repeat(2, 50px);
+            grid-template-columns: repeat(2, 50px);
+            border: solid 1px cadetblue;
+            float: left;
+        }
+        .container > div {
+            border: solid 1px chartreuse;
+        }
+        .container1 {
+            align-items: normal;
+        }
+        .container2 {
+            align-items: start;
+        }
+        .container3 {
+            align-items: end;
+        }
+        .container4 {
+            align-items: center;
+        }
+        .container5 {
+            align-items: stretch;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container container1">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>    
+    <div class="container container2">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div> 
+    <div class="container container3">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div> 
+    <div class="container container4">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    <div class="container container5">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div> 
+
+    </div> 
+</body>
+</html>
