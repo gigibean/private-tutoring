@@ -489,7 +489,63 @@ z-index 속성을 이용해서 아이템이 쌓이는 순서를 변경할 수 �
 `auto-fill`은 남은 공간을 그대로 유지하고, `auto-fit`은 남는 공간을 축소합니다.
 
 `auto-fit`
+```html
+<!-- auto fill auto fit 차이점 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-rows: repeat(auto-fit, minmax(120px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            grid-auto-rows: minmax(120px, 1fr);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        
+    </div> 
+</body>
+</html>
+```
 <br/><img src="./imgs/doc5_img_22.PNG" alt="code result" /> <br/>
 
 `auto-fill`
+```html
+<!-- auto fill auto fit 차이점 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-rows: repeat(auto-fill, minmax(120px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            grid-auto-rows: minmax(120px, 1fr);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        
+    </div> 
+</body>
+</html>
+```
 <br/><img src="./imgs/doc5_img_23.PNG" alt="code result" /> <br/>
