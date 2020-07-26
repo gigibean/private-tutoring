@@ -1,0 +1,35 @@
+<!-- grid template rows & columns -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-rows: 300px 300px;
+            grid-template-columns: 300px 300px;
+            gap: 10px;
+            /* 추가 */
+            grid-auto-rows: 200px;
+            grid-auto-columns: 300px;
+        }
+        .item {
+            background-color: aqua;
+            text-align: center;
+        }
+        .item:last-child {
+            grid-row: 3 / 4;
+            /* 열을 오른쪽으로 옮기기 위해 추가 */
+            grid-column: 3 / 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+</body>
+</html>

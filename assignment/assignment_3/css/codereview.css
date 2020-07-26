@@ -1,0 +1,204 @@
+h1,p {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+    width: 80%;
+    margin: 0 auto !important;
+}
+
+
+.section {
+    background-color: darkgray;
+    /* width:1000px; */
+    margin: 100px auto;
+    background-image: url(../icons-1.0.0-alpha5/icons-1.0.0-alpha5/icons/align-center.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+/*nav bars*/
+.wrap-nav{
+    margin-top: 50px;
+    /* width:1000px; */
+    margin: 50px auto;
+    /* border: 1px solid #000000;
+    border-radius: 50px; */
+    /* overflow: hidden; */
+}
+
+.navbar {
+    border: 1px solid #000000;
+    border-radius: 50px;
+}
+
+.wrap-nav .navbar-brand:hover{
+    background-color:pink;
+    
+}
+
+
+
+
+/*앨범 이미지, 프로필*/
+.section {
+    display: grid;
+}
+.artist {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'img profile list';
+}
+
+.music {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 'img sub';
+}
+
+.album-cover {
+    width: 300px;
+    /* float: left;  */
+    /* margin-right: 10px; */
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+}
+.album-cover-div {
+    grid-area: img;
+}
+
+.profile {
+    grid-area: profile;
+}
+
+.album-list {
+    grid-area: list;
+}
+
+.sub {
+    grid-area: sub;
+    margin-right: 5%;
+}
+
+
+.section::after{
+    content: '';
+    clear: left;
+    display: block;
+}
+
+/* .album-list {
+    margin-left: 610px;
+    margin-top: -250px;
+} */
+
+.album-list li {
+    list-style: url(../icons-1.0.0-alpha5/icons-1.0.0-alpha5/icons/volume-down.svg); 
+}
+.album-list li:hover {
+    list-style: url(../icons-1.0.0-alpha5/icons-1.0.0-alpha5/icons/volume-down-fill.svg);
+  
+}
+
+/*margin값을 이미지width크기인 300px만큼 left했음*/
+/* .section .sub {
+    width:500px;
+    margin-left:300px;
+} */
+
+.section .music-href img {
+    margin-top: 5px;
+    width:40px;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+
+.section .music-href img:hover {
+    margin-top: 5px;
+    width: 40px;
+    transform: scale(1.5);
+    transition: transform.5s;
+    border-radius: 50%;
+  
+}
+
+
+.music-href .music-href-sub a{
+
+    text-decoration: none;
+
+}
+.sub .sub-p {
+
+    line-height: 2;
+    font-family: 'Nanum Brush Script', cursive;
+    color: #000000;
+
+}
+
+.sub .sub-span{
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.sub .sub-h1 {
+    margin-bottom: 10px;
+}
+
+.music-href {
+    vertical-align: bottom;
+}
+
+.music-href-sub li {
+    display: inline-block;
+
+    
+}
+
+.music-href-sub img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.music-href-sub img:hover {
+    width:60px;
+}
+
+.wrap-footer {
+    border-top: 1px solid gray;
+    padding: 20px;
+}
+
+.ani {
+    transition: transform 7s;
+    width: 300px;
+    height: 300px; 
+    border-radius: 150px;
+}
+
+.ani:hover {
+    transform: rotate( 360deg );
+    opacity: 0.2;
+}
+
+.artist{
+    background-image: url(../icons-1.0.0-alpha5/icons-1.0.0-alpha5/icons/music-note-list.svg);
+    background-position: right center;
+}
+
+.album-cover-div {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+#ani-p-div {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    text-align: center;
+}
+
+#ani-p-div > p {
+    color: blueviolet;
+    font-size: large;
+}

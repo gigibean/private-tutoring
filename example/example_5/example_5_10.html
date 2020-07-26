@@ -1,0 +1,39 @@
+<!-- justify self -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 200px);
+            grid-template-rows: repeat(2, 200px);
+            gap: 10px;
+        }
+        .item {
+            background-color: cadetblue;
+        }
+        .item:nth-child(1) {
+            justify-self: start;
+        }
+        .item:nth-child(2) {
+            justify-self: center;
+        }
+        .item:nth-child(3) {
+            justify-self: end;
+        }
+        .item:nth-child(4) {
+            justify-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!-- grid_2 contener & item -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas: "header" "main" "footer";
+            grid-auto-rows: minmax(200px, auto);
+            width: 90vw;
+            height: 100vh;
+            margin: 0 auto;
+        }
+        .header {
+            grid-area: header;
+        }
+        .main {
+            grid-area: main;
+        }
+        .footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- display: grid 인 요소로, 모든 grid item의 부모 요소입니다. -->
+        <!-- .item 은 grid item들입니다. 그러나 .sub-item은 grid-item이 아닙니다. -->
+        <div class="item header">
+            <h1 class="sub iten">hello world</h1>
+        </div>
+        <div class="item main"></div>
+        <div class="item footer"></div>
+    </div>
+</body>
+</html>
