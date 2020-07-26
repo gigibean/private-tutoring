@@ -143,8 +143,7 @@ body{
     opacity: 0.2;
 }
 
-.section:nth-child(4){
-    border: 1px solid red;
+.section:nth-child(odd){
     background-image: url(/icons-1.0.0-alpha5/icons-1.0.0-alpha5/icons/music-note-list.svg);
     background-position: right center;
 }
