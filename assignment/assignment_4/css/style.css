@@ -1,0 +1,73 @@
+.container {
+    width:1000px;
+    margin: 0 auto;
+    height: 100hv;
+    display: grid;
+    grid-template-rows: repeat(auto, 1fr);
+    grid-template-columns: repeat(auto, 1fr);
+    gap: 5px;
+    grid-template-areas:
+        "ad     ad      ad"
+        "header header header"
+        "nav nav nav"
+        "main login login"
+        "main corona_img_ad corona_img_ad"
+        "main shop shop"
+        "footer footer footer";
+}
+.ad{grid-area: ad;}
+header { grid-area: header; }
+.nav { grid-area: nav;}
+main   { grid-area: main;   }
+.login { grid-area: login; }
+.corona_img_ad  { grid-area: corona_img_ad;  }
+.shop { grid-area: shop;}
+footer { grid-area: footer; }
+
+.ad {
+    border:1px solid gray;
+    padding:10px;
+}
+header {
+    border:1px solid gray;
+    padding:50px;
+}
+.nav {
+    
+    border:1px solid gray;
+}
+.article {
+    width:124px;
+    border:1px solid gray;
+}
+main {
+    width: 750px;
+    height: 2545px;
+    border:1px solid gray;
+}
+
+.login {
+    
+    border:1px solid gray;
+    width: 350px;
+    height: 135px;
+}
+
+.corona_img_ad {    
+    border:1px solid gray;
+    width: 350px;
+    height: 135px;
+    margin-bottom: -300px;
+}
+
+.shop {
+    border:1px solid gray;
+    width: 350px;
+    height: 2235px;
+}
+
+footer {
+    
+    border:1px solid gray;
+    padding:50px;
+}
